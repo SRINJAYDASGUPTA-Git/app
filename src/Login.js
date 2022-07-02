@@ -27,7 +27,7 @@ function Login() {
         </div>
         <div class="form">
           <input type="email" class="form-field animation a3" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)}></input>
-            <input type="password" class="form-field animation a4" placeholder="Password"></input>
+            <input type="password" class="form-field animation a4" placeholder="Password"value={password} onChange={(e) => setPassword(e.target.value)}></input>
               <p class="animation a5"><a href="/reset">Forgot Password</a></p>
               <button class="animation a6" onClick={() => logInWithEmailAndPassword(email, password)}>LOGIN</button>
             <button className="login__btn login__google" onClick={signInWithGoogle}>
