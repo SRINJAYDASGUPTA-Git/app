@@ -26,43 +26,27 @@ function Register() {
   }, [user, loading]);
 
   return (
-    <div className="register">
-      <div className="register__container">
-        <input
-          type="text"
-          className="register__textBox"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Full Name"
-        />
-        <input
-          type="text"
-          className="register__textBox"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="E-mail Address"
-        />
-        <input
-          type="password"
-          className="register__textBox"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-        />
-        <button className="register__btn" onClick={register}>
-          Register
-        </button>
-        <button
-          className="register__btn register__google"
-          onClick={signInWithGoogle}
-        >
-          Register with Google
-        </button>
-
-        <div>
-          Already have an account? <Link to="/">Login</Link> now.
+    <div class="container">
+      <div class="left">
+        <div class="header">
+          <h2 class="animation a1">Register Now!</h2>
+          <h4 class="animation a2">Register using name, email and password</h4>
+        </div>
+        <div class="form">
+          <input type="text" class = "form-field animation a3" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)}></input>
+          <input type="email" class="form-field animation a3" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)}></input>
+            <input type="password" class="form-field animation a4" placeholder="Password"></input>
+              <p class="animation a5"><a href="/reset">Forgot Password</a></p>
+              <button class="animation a6" onClick={register}>Register</button>
+            <button className="login__btn login__google" onClick={signInWithGoogle}>
+              Register with Google
+            </button>
+          <div>
+            Already have an account? <Link to="/">Login</Link> now.
+          </div>
         </div>
       </div>
+      <div class="right"></div>
     </div>
   );
 }
