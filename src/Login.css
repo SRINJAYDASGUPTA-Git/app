@@ -77,7 +77,7 @@ input{
     display: block;
     height: 50px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.07);
+    background-color: rgba(255,255,255,0.07);
     border-radius: 3px;
     padding: 0 10px;
     margin-top: 8px;
@@ -85,13 +85,13 @@ input{
     font-weight: 300;
 }
 ::placeholder{
-    color: #ffffff;
+    color: #e5e5e5;
 }
 button{
     margin-top: 50px;
     width: 100%;
-    background-color: #ffffff;
-    color: #1e0ab4;
+    background-color: #7bbdd1;
+    color: #080710;
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
