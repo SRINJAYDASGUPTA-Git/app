@@ -18,7 +18,7 @@ function Register() {
 
   const register = () => {
     if (!name) alert("Please enter name");
-    registerWithEmailAndPassword(name, email, password);
+    registerWithEmailAndPassword(name, email, password,standard);
   };
 
   useEffect(() => {
@@ -39,7 +39,7 @@ function Register() {
           <input type="text" class="form-field animation a4" placeholder="Standard" value={standard} onChange={(e) => setStandard(e.target.value)}></input>
             <input type="password" class="form-field animation a4" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
               <p class="animation a5"><a href="/reset">Forgot Password</a></p>
-              <button class="animation a6" onClick={register}>Register</button>
+              <button class="animation a6"  >Register</button>
             <button className="login__btn login__google" onClick={signInWithGoogle}>
               Register with Google
             </button>

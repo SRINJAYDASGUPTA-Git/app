@@ -15,30 +15,32 @@ function Login() {
       // maybe trigger a loading screen
       return;
     }
-    if (user) navigate("/dashboard");
+    if (user)navigate("/dashboard");
   }, [user, loading]);
 
   return (
-    <div class="container">
-      <div class="left">
-        <div class="header">
-          <h2 class="animation a1">Welcome Back</h2>
-          <h4 class="animation a2">Log in to your account using email and password</h4>
+    <div>
+        <div class="background">
+          <div class="shape"></div>
+          <div class="shape"></div>
         </div>
-        <div class="form">
-          <input type="email" class="form-field animation a3" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)}></input>
-            <input type="password" class="form-field animation a4" placeholder="Password"value={password} onChange={(e) => setPassword(e.target.value)}></input>
-              <p class="animation a5"><a href="/reset">Forgot Password</a></p>
-              <button class="animation a6" onClick={() => logInWithEmailAndPassword(email, password)}>LOGIN</button>
-            <button className="login__btn login__google" onClick={signInWithGoogle}>
+        <div className="form">
+          <h3>Login Here</h3>
+
+          <label for="username">Email</label>
+          <input type="text" placeholder="Email" id="username" value={email} onChange={(e) => setEmail(e.target.value)}/>
+
+          <label for="password">Password</label>
+          <input type="password" placeholder="Password" id="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+          <p><a href="/reset">Forgot Password</a></p>
+          <button onClick={() => logInWithEmailAndPassword(email, password)}>Log In</button>
+          <button onClick={signInWithGoogle}>
               Login with Google
             </button>
             <div>
               Don't have an account? <Link to="/register">Register</Link> now.
             </div>
         </div>
-      </div>
-      <div class="right"></div>
     </div>
   );
 }
