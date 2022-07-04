@@ -39,7 +39,7 @@ body{
     right: -30px;
     bottom: -80px;
 }
-.form{
+.Form{
     height: 550px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
@@ -53,14 +53,14 @@ body{
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
 }
-.form *{
+.Form *{
     font-family: 'Poppins',sans-serif;
     color: #ffffff;
     letter-spacing: 0.5px;
     outline: none;
     border: none;
 }
-.form h3{
+.Form h3{
     font-size: 32px;
     font-weight: 500;
     line-height: 42px;
@@ -77,7 +77,7 @@ input{
     display: block;
     height: 50px;
     width: 100%;
-    background-color: rgba(255,255,255,0.07);
+    background-color: rgba(255, 255, 255, 0.07);
     border-radius: 3px;
     padding: 0 10px;
     margin-top: 8px;
@@ -85,13 +85,13 @@ input{
     font-weight: 300;
 }
 ::placeholder{
-    color: #e5e5e5;
+    color: #ffffff;
 }
 button{
     margin-top: 50px;
     width: 100%;
     background-color: #ffffff;
-    color: #080710;
+    color: #1e0ab4;
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;

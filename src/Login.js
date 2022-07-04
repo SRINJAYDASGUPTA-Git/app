@@ -24,7 +24,7 @@ function Login() {
           <div class="shape"></div>
           <div class="shape"></div>
         </div>
-        <div className="form">
+        <div className="Form">
           <h3>Login Here</h3>
 
           <label for="username">Email</label>
