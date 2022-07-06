@@ -66,7 +66,7 @@ body {
 .form-field {
   height: 46px;
   padding: 0 16px;
-  border: 2px solid rgb(24, 24, 24);
+  border: 2px solid rgb(170, 170, 170);
   border-radius: 4px;
   font-family: 'Rubik', sans-serif;
   /* color: rgb(255, 0, 0); */
@@ -122,6 +122,14 @@ body {
 
 .a6 {
   animation-delay: 2.5s;
+}
+
+.a7{
+  animation-delay: 2.6s;
+}
+
+.a8{
+  animation-delay: 2.7s;
 }
 
 @keyframes move {
