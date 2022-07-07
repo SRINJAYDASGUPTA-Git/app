@@ -1,7 +1,6 @@
 import React from "react";
 import { CssBaseline, makeStyles } from "@material-ui/core";
 import Header from "../Header";
-
 const useStyles = makeStyles((theme) => ({
     root:{
         minHeight : "100vh",

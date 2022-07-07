@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Nunito";
 }
 
 .reset__container {
@@ -11,6 +12,7 @@
   flex-direction: column;
   text-align: center;
   background-color: #dcdcdc;
+  font-family: "Nunito";
   padding: 30px;
 }
 

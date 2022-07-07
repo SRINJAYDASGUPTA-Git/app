@@ -7,6 +7,7 @@
 }
 body{
     background-color: #080710;
+    font-family: "Nunito";
 }
 .background{
     width: 430px;
@@ -40,7 +41,7 @@ body{
     bottom: -80px;
 }
 .Form{
-    height: 550px;
+    height: 570px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
@@ -52,9 +53,10 @@ body{
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
+    font-family: "Nunito";
 }
 .Form *{
-    font-family: 'Poppins',sans-serif;
+    font-family:'Nunito',sans-serif;
     color: #ffffff;
     letter-spacing: 0.5px;
     outline: none;
@@ -65,6 +67,7 @@ body{
     font-weight: 500;
     line-height: 42px;
     text-align: center;
+    font-family: "Nunito";
 }
 
 label{
