@@ -15,9 +15,10 @@ const useStyles = makeStyles((theme) => ({
   },
   appbar: {
     background: 'none',
+    width: "100%"
   },
   appbarWrapper: {
-    width: '80%',
+    width: '160%',
     margin: '0 auto',
   },
   appbarTitle: {
@@ -25,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     color: '#fff',
+    width:"50%",
     fontSize: '2rem',
   },
   colorText: {

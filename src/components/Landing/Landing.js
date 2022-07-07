@@ -1,6 +1,7 @@
 import React from "react";
 import { CssBaseline, makeStyles } from "@material-ui/core";
 import Header from "../Header";
+import PlacesToVisit from "../PlacesToVisit/PlacesToVisit";
 const useStyles = makeStyles((theme) => ({
     root:{
         minHeight : "100vh",
@@ -16,6 +17,7 @@ function Landing () {
         <div className={classes.root}>
             <CssBaseline/>
             <Header />
+            <PlacesToVisit/>
         </div>
     );
 }
