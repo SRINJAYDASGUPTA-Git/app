@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #080710;
+    background-image: url(../../../public/assets/login.jpg);
     font-family: "Nunito";
 }
 .background{
@@ -17,7 +17,7 @@ body{
     left: 50%;
     top: 50%;
 }
-.background .shape{
+/* .background .shape{
     height: 200px;
     width: 200px;
     position: absolute;
@@ -39,17 +39,17 @@ body{
     );
     right: -30px;
     bottom: -80px;
-}
+} */
 .Form{
     height: 570px;
     width: 400px;
-    background-color: rgba(255,255,255,0.13);
+    
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2.6px);
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;

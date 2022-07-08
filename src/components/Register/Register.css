@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,500&display=swap');
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  color:#fff
 }
 
 .container {
@@ -21,7 +22,7 @@ body {
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 1s;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
 }
 
 .right {
@@ -38,14 +39,14 @@ body {
 
 .header > h2 {
   margin: 0;
-  color: #4f46a5;
+  color: #8b83ca;
 }
 
 .header > h4 {
   margin-top: 10px;
   font-weight: normal;
   font-size: 15px;
-  color: rgba(0,0,0,.8);
+  color: aqua;
 }
 
 .form {
@@ -66,20 +67,20 @@ body {
 .form-field {
   height: 46px;
   padding: 0 16px;
-  border: 2px solid rgb(170, 170, 170);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 4px;
   font-family: 'Rubik', sans-serif;
-  /* color: rgb(255, 0, 0); */
+  color: rgb(255, 255, 255);
   outline: 0;
   transition: .2s;
   margin-top: 20px;
 }
 ::placeholder{
-  color: #575456;
+  color: #fff;
 }
 
 .form-field:focus {
-  border-color: #0f7ef1;
+  border-color: #6f3bc4;
 }
 
 .form > button {
@@ -93,11 +94,16 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+.links{
+  color:aquamarine;
+}
+
 .animation {
   animation-name: move;
   animation-duration: .4s;
   animation-fill-mode: both;
   animation-delay: 2s;
+  color: aqua;
 }
 
 .a1 {
