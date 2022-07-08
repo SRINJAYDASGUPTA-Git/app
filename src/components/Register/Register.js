@@ -4,7 +4,6 @@ import { Link, useNavigate } from "react-router-dom";
 import {
   auth,
   registerWithEmailAndPassword,
-  signInWithGoogle,
 } from "../../firebase";
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -41,7 +40,9 @@ const useStyles = makeStyles((theme) => ({
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
+  const [firstName, setFName] = useState("");
+  const [lastName, setLName] = useState("");
+  const name = firstName+" "+lastName;
   const [standard, setStandard] = useState("");
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
@@ -106,14 +107,19 @@ function Register() {
           <h4 class="animation a2">Register using name, email and password</h4>
         </div>
         <div class="form">
-          <input type="text" class = "form-field animation a3" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)}></input>
+          <div class="form-row animation a3">
+            <div class="form-group ">
+              <input type="text" placeholder="First Name" value={firstName} onChange={(e) => setFName(e.target.value)}/>
+            </div>
+            <div class="form-group">
+              <input id="last-name" type="text" placeholder="Last Name" value={lastName} onChange={(e) => setLName(e.target.value)}/>
+            </div>
+          </div>
+          {/* <input type="text" class="form-field animation a3" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)}></input> */}
           <input type="email" class="form-field animation a3" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)}></input>
           <input type="text" class="form-field animation a4" placeholder="Standard" value={standard} onChange={(e) => setStandard(e.target.value)}></input>
-            <input type="password" class="form-field animation a4" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
-              <button class="animation a6" onClick={register} >Register</button>
-            <button className="animation a7" onClick={signInWithGoogle}>
-              Register with Google
-            </button>
+          <input type="password" class="form-field animation a4" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
+          <button class="animation a6" onClick={register} >Register</button>
           <div class="animation a8">
             Already have an account? <Link to="/login" className="links">Login</Link> now.
           </div>

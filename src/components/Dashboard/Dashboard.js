@@ -8,6 +8,7 @@ import { query, collection, getDocs, where } from "firebase/firestore";
 function Dashboard() {
   const [user, loading, error] = useAuthState(auth);
   const [name, setName] = useState("");
+  const [standard, setStandard] = useState("");
   const navigate = useNavigate();
 
   const fetchUserName = async () => {
@@ -17,6 +18,7 @@ function Dashboard() {
       const data = doc.docs[0].data();
 
       setName(data.name);
+      setStandard(data.standard);
     } catch (err) {
       console.error(err);
       alert("An error occured while fetching user data");
@@ -36,6 +38,7 @@ function Dashboard() {
         Logged in as
         <div>{name}</div>
         <div>{user.email}</div>
+        <div><p>Class:{standard}</p></div>
         <button className="dashboard__btn" onClick={logout}>
           Logout
         </button>

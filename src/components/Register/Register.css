@@ -50,11 +50,33 @@ body {
 }
 
 .form {
-  max-width: 80%;
+  font-family: "Nunito";
+  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
+.form-row {
+  display: flex;
+  width: 100%;
+}
 
+.form-group {
+  padding: 5px;
+  width: 100%;
+}
+
+.form-group input {
+  width: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  font-family: 'Nunito', sans-serif;
+  padding: 0 16px;
+  height: 46px;
+  margin-top: 20px;
+  color:white;
+  outline: 0;
+  font-weight: 600;
+}
 .form > p {
   text-align: right;
 }
@@ -65,11 +87,13 @@ body {
 }
 
 .form-field {
+  font-weight: 600;
   height: 46px;
+  width: 100%;
   padding: 0 16px;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 4px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: rgb(255, 255, 255);
   outline: 0;
   transition: .2s;
@@ -82,8 +106,8 @@ body {
 .form-field:focus {
   border-color: #6f3bc4;
 }
-
-.form > button {
+.form>button{
+  width:100%;
   padding: 12px 10px;
   border: 0;
   background: linear-gradient(to right, #de48b5 0%,#0097ff 100%); 
@@ -94,6 +118,7 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+
 .links{
   color:aquamarine;
 }
@@ -103,7 +128,7 @@ body {
   animation-duration: .4s;
   animation-fill-mode: both;
   animation-delay: 2s;
-  color: aqua;
+  color: rgb(250, 255, 255);
 }
 
 .a1 {

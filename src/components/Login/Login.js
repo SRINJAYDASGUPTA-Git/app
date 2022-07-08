@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { auth, logInWithEmailAndPassword, signInWithGoogle } from "../../firebase";
+import { auth, logInWithEmailAndPassword } from "../../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import "./Login.css";
 import { makeStyles } from '@material-ui/core/styles';
@@ -103,9 +103,6 @@ function Login() {
           <input type="password" placeholder="Password" id="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
           <p><a href="/reset">Forgot Password</a></p>
           <button onClick={() => logInWithEmailAndPassword(email, password)}>Log In</button>
-          <button onClick={signInWithGoogle}>
-              Login with Google
-            </button>
             <div>
               Don't have an account? <Link to="/register">Register</Link> now.
             </div>
