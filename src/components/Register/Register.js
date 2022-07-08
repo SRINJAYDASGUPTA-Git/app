@@ -38,18 +38,18 @@ const useStyles = makeStyles((theme) => ({
   },  
 }));
 function Register() {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(null);
   const [password, setPassword] = useState("");
   const [firstName, setFName] = useState("");
   const [lastName, setLName] = useState("");
-  const name = firstName+" "+lastName;
+  const name = firstName+lastName;
   const [standard, setStandard] = useState("");
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
 
   const register = () => {
     if (!name) alert("Please enter name");
-    registerWithEmailAndPassword(name, email, password,standard);
+    registerWithEmailAndPassword(firstName,lastName, email, password,standard);
   };
 
   useEffect(() => {

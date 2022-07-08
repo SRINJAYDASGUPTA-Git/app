@@ -11,7 +11,7 @@ import {
   collection,
   addDoc,
 } from "firebase/firestore";
-
+import { useNavigate } from "react-router-dom";
 const firebaseConfig = {
     apiKey: "AIzaSyBD0eu52eILFvtLCNZBSLuXmhU2GQ97aqE",
     authDomain: "reactwebpage-87b1b.firebaseapp.com",
@@ -35,13 +35,14 @@ const logInWithEmailAndPassword = async (email, password) => {
   }
 };
 
-const registerWithEmailAndPassword = async (name, email, password, standard) => {
+const registerWithEmailAndPassword = async (first_name,last_name, email, password, standard) => {
   try {
     const res = await createUserWithEmailAndPassword(auth, email, password);
     const user = res.user;
     await addDoc(collection(db, "users"), {
       uid: user.uid,
-      name,
+      first_name,
+      last_name,
       authProvider: "local",
       email,
       standard,
