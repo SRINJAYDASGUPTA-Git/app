@@ -1,45 +1,111 @@
-body{
-  font-family: "Nunito";
+.bodyDash{
+  height: 100vh;
+  background: white;
+  align-items: center;
+  align-content: center;
+  font-family: 'Nunito';
+  font-weight: 400;
 }
-.avatar{
-  align-self: center;
-}
-.dashboard {
-  height: 500px;
-    width: 400px;
-    
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 10px;
-    backdrop-filter: blur(2.6px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 50px 35px;
-    font-family: "Nunito";
+.h1Dash {
+  display:block;
+  position:fixed;
+  margin: 5px auto;
 }
 
-.dashboard__container {
+.spanDash{
+  color:#5AFF3D;
+}
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 1; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 100px;
+}
+.typoDash{
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #888a8c;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.listItemIconDash:hover {
+  color: #1a73e8;
+}
+
+.headerDash{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imageDash{
+  display: flex;
+  justify-content: center;
+  padding-top: 17%;
+}
+.welcomeDash{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito';
+  font-size: 40px;
+  padding-top: 0%;
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
   text-align: center;
-  font-family: "Nunito";
-  color: white;
-  padding: 30px;
-}
-
-.dashboard__btn {
-  padding: 10px;
-  font-size: 18px;
-  margin-top: 10px;
-  border: none;
-  color: white;
-  background-color: black;
-  font-family: "Nunito";
-}
-
-.dashboard div {
-  margin-top: 7px;
-  font-family: "Nunito";
 }
